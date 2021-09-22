@@ -1,14 +1,38 @@
 *, :after, :before { box-sizing: border-box; }
 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+    padding: 50px;
+}
+
+.profil {
+    display: grid;
+    grid-template-columns: 10px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 10px 80px 80px 80px 80px 80px 80px 80px;
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+    overflow: auto;
+}
+
 h1 {
     text-align: center;
 }
 
 .players {
-    display: flex;
-    justify-content: space-between;
-
+    display:grid;
+    min-height: 100%;
 }
+
+.adela{
+    grid-row: 1;   
+    grid-column: -1;
+    
+}
+
+
 
 .honza img,
 .adela img {
@@ -16,7 +40,16 @@ h1 {
     width: auto;
 }
 
+.sachovnice img {
+    width: 80px;
+    height: 80px;
+}
+
+
+
 .sachovnice {
+    width: 566px;
+    height: 566px;
     background-image: url(obrazky/sachovnice.png);
     border: 10px solid rgb(32, 25, 25) ;
     border-radius: 5px;
