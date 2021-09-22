@@ -1,0 +1,24 @@
+*, :after, :before { box-sizing: border-box; }
+
+h1 {
+    text-align: center;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.honza img,
+.adela img {
+    height: 100px;
+    width: auto;
+}
+
+.sachovnice {
+    background-image: url(obrazky/sachovnice.png);
+    border: 10px solid rgb(32, 25, 25) ;
+    border-radius: 5px;
+}
+
