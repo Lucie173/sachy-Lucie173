@@ -3,55 +3,72 @@
 body {
     width: 100%;
     height: 100%;
-    margin: 50px;
+    margin: auto;
     padding: 50px;
 }
 
 .profil {
-    display: grid;
-    grid-template-columns: 10px 80px 80px 80px 80px 80px 80px 80px;
-    grid-template-rows: 10px 80px 80px 80px 80px 80px 80px 80px;
+    width: 566px;
+    height: 100%;
     margin: 0 auto;
-    width: 800px;
-    height: 800px;
     overflow: auto;
 }
 
 h1 {
     text-align: center;
+    font-weight: bold;
+    margin: 0 0 50px 0;
 }
 
 .players {
-    display:grid;
+    display: flex;
+    justify-content: space-between;
     min-height: 100%;
 }
 
-.adela{
-    grid-row: 1;   
-    grid-column: -1;
-    
+.adela,
+.honza {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-
 
 .honza img,
 .adela img {
-    height: 100px;
+    height: 80px;
     width: auto;
+    border-radius: 5px 5px 5px 5px;
+    padding-bottom: 20px;
+}
+p {
+    text-align: justify;
 }
 
-.sachovnice img {
+.sachy img {
     width: 80px;
     height: 80px;
 }
 
-
-
 .sachovnice {
     width: 566px;
     height: 566px;
+    aspect-ratio: 1/1;
     background-image: url(obrazky/sachovnice.png);
-    border: 10px solid rgb(32, 25, 25) ;
+    background-position: cover;
+    border: 10px solid rgb(32, 25, 25);
     border-radius: 5px;
 }
 
+.sachy {
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px);
+    grid-auto-flow: row;
+}
+
+.dama_cerna {
+    grid-column-start: 5;
+}
+
+.pesec_cerna {
+    grid-row-start: 2;
+}
