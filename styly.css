@@ -29,20 +29,35 @@ h1 {
 .adela,
 .honza {
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
-.honza img,
-.adela img {
+.foto_Adela {
     height: 80px;
     width: auto;
-    border-radius: 5px 5px 5px 5px;
-    padding-bottom: 20px;
+    border-radius: 5px;
+    padding: 0 0 20px 10px;
+    object-fit: cover;
 }
-p {
-    text-align: justify;
+.foto_Honza {
+    height: 80px;
+    width: auto;
+    border-radius: 5px;
+    padding: 0 10px 20px 0;
+    object-fit: cover;
 }
 
+h3 {
+    margin: 5px 0 0 0;
+    padding: 0;
+
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+    color: grey;
+}
 .sachy img {
     width: 80px;
     height: 80px;
@@ -51,7 +66,6 @@ p {
 .sachovnice {
     width: 566px;
     height: 566px;
-    aspect-ratio: 1/1;
     background-image: url(obrazky/sachovnice.png);
     background-position: cover;
     border: 10px solid rgb(32, 25, 25);
