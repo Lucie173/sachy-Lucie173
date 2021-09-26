@@ -37,20 +37,21 @@ h1 {
     height: 80px;
     width: auto;
     border-radius: 5px;
-    padding: 0 0 20px 10px;
+    margin: 10px 0 0 10px;
     object-fit: cover;
 }
 .foto_Honza {
     height: 80px;
     width: auto;
     border-radius: 5px;
-    padding: 0 10px 20px 0;
+    /*padding: 0 10px 20px 0;*/
+    margin: 10px 10px 10px 0;
     object-fit: cover;
 }
 
 h3 {
-    margin: 5px 0 0 0;
-    padding: 0;
+    margin: 10px 0 0 0;
+    padding: 0 0 5px 0;
     font-weight: bold;
 
 }
@@ -60,35 +61,78 @@ h3 {
     color: grey;
 }
 .sachy img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
 }
 
 .sachovnice {
     width: 566px;
     height: 566px;
     background-image: url(obrazky/sachovnice.png);
-    background-position: cover;
     border: 10px solid rgb(32, 25, 25);
     border-radius: 5px;
 }
 
 .sachy {
     display: grid;
-    grid-template-columns: repeat(8, 70px);
-    grid-template-rows: repeat(8, 70px);
-    grid-auto-flow: row;
+    justify-items: center;;
+    grid-template-columns: repeat(8, 68.5px);
+    grid-template-rows: repeat(8, 68.5px);
+    
 }
 
-.dama_cerna {
+.strelec_cerna {
     grid-column-start: 5;
+    grid-row-start: 1;
+    justify-self: center;
 }
 
 .pesec_cerna {
     grid-row-start: 2;
+    justify-self: center;
 }
 
+.kun_bily {
+    grid-column-start: 2;
+    grid-row-start: 5;
+    justify-self: center;
+}
 
+.pesec_bila {
+    grid-column-start: 4;
+    grid-row-start: 4;
+    justify-self: center;
+}
+
+.kral_cerna {
+    grid-column-start: 6;
+    grid-row-start: 6;
+    justify-self: center;
+}
+
+.vez_cerna {
+    grid-column-start: 3;
+    grid-row-start: 8;
+    justify-self: center;
+}
+
+.pesec_cerna1 {
+    grid-column-start: 8;
+    grid-row-start: 4;
+    justify-self: center;
+}
+
+.pesec_cerna2 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    justify-self: center;
+}
+
+.kral_bila {
+    grid-column-start: 6;
+    grid-row-start: 8;
+    justify-self: center;
+}
 
 .vitez {
     padding-top: 10px;
@@ -105,4 +149,5 @@ button {
     background-color: rgb(83, 83, 219);
     padding: 5px 30px 5px 30px;
     border: 1px solid black;
+    margin-bottom: 20px
 }
